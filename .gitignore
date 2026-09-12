@@ -1,0 +1,17 @@
+# Build artefacts
+*.o
+my_torch_analyzer
+nn_test
+
+# Trained networks produced locally. The reference network in networks/ is
+# tracked on purpose — it is what reproduces the published results.
+*.nn
+!networks/*.nn
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+results/
